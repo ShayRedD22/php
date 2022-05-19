@@ -22,7 +22,10 @@ IF:
 
 */
 
+
 //Ejemplo 1
+
+
 $color = 'rojo';
 
 if($color == 'red'){
@@ -33,6 +36,8 @@ if($color == 'red'){
     echo 'El color ahora es: '. $color;
 }
 
+echo '<br>';
+echo '--------------------------------------------------------------';
 echo '<br>';
 
 //Ejemplo 2
@@ -46,6 +51,8 @@ if ($edad >= $mayor_edad){
     echo 'Es menor de edad';
 }
 
+echo '<br>';
+echo '--------------------------------------------------------------';
 echo '<br>';
 
 //Ejemplo 3 elseif
@@ -73,10 +80,77 @@ if($dia == 1){
     echo 'Es Domingo';
 }
 
+echo '<br>';
+echo '--------------------------------------------------------------';
 //Ejemplo 4 
+
+/*
 //operadores logicos
+&& => sigifiva and (y)
+|| OR (o)
+! NOT (NO)
+*/
+$edad1 = 18;
+$edad2 = 64;
+$edad_oficial= 17;
 
+echo'<br>';
 
+if ($edad_oficial >= $edad1 && $edad_oficial <= $edad2){
+    echo 'Cumple usted con el rango de edad para trabajar';
+}else{
+    echo 'Usted no cumlple con el rango de edad para trabajar';
+}
 
+//switch
+echo '<br>';
+echo '--------------------------------------------------------------';
+echo '<br>';
+echo 'Dia de la semana usando switch';
+echo '<br>';
 
+$diaN = 4;
 
+switch ($diaN){
+    case 1:
+        echo 'Lunes';
+        break;
+    case 2:
+        echo 'Martes';
+        break; 
+    case 3:
+        echo 'Miercoles';
+        break;
+    case 4:
+        echo 'Jueves';
+        break;
+    case 5:
+        echo 'Viernes';
+        break;
+    case 6:
+       echo 'Sabado';
+       break;
+    case 7:
+        echo 'Domingo';
+        break;
+    default:
+        echo 'no es un dia de la semana';
+}  
+
+echo '<br>';
+echo '--------------------------------------------------------------';
+echo '<br>';
+//GOTO
+
+/*
+    el goto sirve para saltarce instrucciones
+*/
+goto marca;
+
+echo "<h3>Instruccion 1</h3>";
+echo "<h3>Instruccion 2</h3>";
+echo "<h3>Instruccion 3</h3>";
+echo "<h3>Instruccion 4</h3>";
+
+marca:
+    echo 'Me salte 4 echo';
